@@ -32,3 +32,11 @@ NightFall completed a real Ausca `media.transcription` run using a committed WAV
 - No wallet private key or seed phrase is present.
 - No EIP-3009 authorization signature is published.
 - Requests and evidence use only public identifiers, public hashes, and public receipt references.
+
+## Verification notes
+- Artifact route evidence: `runx:artifact:sha256:e0567cd973eee9d29f6e90218928c37a6f60cc0bfe95dbfb14f42665aff52c07` preserved the WAV bytes and content digest before invocation.
+- Challenge binding: HTTP `402` named Base as `eip155:8453`, USDC asset `0x833589fcd6edb6e08f4c7c32d4f71b54bda02913`, and the exact payTo address used for this run.
+- Invocation binding: `paid_3864566f-3fe4-4f96-afdb-969c6fb02897` is the same invocation described by `evidence.json` and the Runx receipt.
+- Result binding: terminal `output_digest=sha256:5c2c4f925bf551a322156970b2b3e6bc5a2e4e5be1fde87d448887fc1b121ff0` is recorded with the succeeded readback.
+- Source binding: the returned `source_digest` equals the uploaded WAV content digest `sha256:f56dcb8fe9050dd464d8a999a91e3c66c89a4e10ae6b87af9488b3546b700eac`.
+- Receipt binding: the public Runx URL resolves the receipt for the same successful `media.transcription` execution.
