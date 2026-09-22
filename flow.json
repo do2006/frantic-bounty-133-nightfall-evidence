@@ -1,0 +1,69 @@
+{
+  "started_at": "2026-09-22T14:07:07.834Z",
+  "completed_at": "2026-09-22T14:10:04.419Z",
+  "invocation_id": "paid_3864566f-3fe4-4f96-afdb-969c6fb02897",
+  "offer_id": "media.transcription",
+  "offer_revision": "transcription-bytes-r6",
+  "offer_revision_digest": "sha256:4a9d20f6a8e7cde3a3b92ad951c9e256a6b57ad8309da57eb751660ccafd56fb",
+  "input_schema_digest": "sha256:7104c2ab18922a8af6556e1db88de929bc93338520758702c1aa7c59e311681e",
+  "output_schema_digest": "sha256:e49c0818147668b6e69e4f16d500cb40dc9f3831d8fad9ddf1809be631a9d436",
+  "idempotency_key": "nightfall-frantic-133-a780597e-8e67-46e2-8222-ab849d9948da",
+  "input": {
+    "artifact": {
+      "artifact_ref": "runx:artifact:sha256:e0567cd973eee9d29f6e90218928c37a6f60cc0bfe95dbfb14f42665aff52c07",
+      "content_digest": "sha256:f56dcb8fe9050dd464d8a999a91e3c66c89a4e10ae6b87af9488b3546b700eac",
+      "media_type": "audio/wav"
+    },
+    "media_format": "wav",
+    "language_code": "en-US"
+  },
+  "prepare_ms": 2191,
+  "unsigned_status": 402,
+  "unsigned_ms": 405,
+  "paid_submit_ms": 3532,
+  "paid_status": 202,
+  "initial_state": "admitted",
+  "poll_count": 1,
+  "wait_ms": 1727,
+  "polls": [
+    {
+      "n": 1,
+      "http": 200,
+      "state": "succeeded",
+      "ms": 1726,
+      "at": "2026-09-22T14:10:04.418Z"
+    }
+  ],
+  "state": "succeeded",
+  "output_digest": "sha256:5c2c4f925bf551a322156970b2b3e6bc5a2e4e5be1fde87d448887fc1b121ff0",
+  "receipt_ref": {
+    "type": "receipt",
+    "uri": "runx:receipt:sha256:ea9b626d04b02577b5b81ea60fdfe8de315affb0c17e199b2ae770a9401ce029",
+    "public_url": "https://runx.ai/r/ea9b626d04b02577b5b81ea60fdfe8de315affb0c17e199b2ae770a9401ce029"
+  },
+  "output": {
+    "language_code": "en-US",
+    "schema": "ausca.transcription.output.v1",
+    "segments": [
+      {
+        "end_seconds": 2.43,
+        "start_seconds": 0,
+        "text": "Nightfall frantic transcription test."
+      },
+      {
+        "end_seconds": 5.85,
+        "start_seconds": 3.09,
+        "text": "The quick brown fox jumps over the lazy dog."
+      }
+    ],
+    "source_digest": "sha256:f56dcb8fe9050dd464d8a999a91e3c66c89a4e10ae6b87af9488b3546b700eac",
+    "text": "Nightfall frantic transcription test. The quick brown fox jumps over the lazy dog."
+  },
+  "output_artifact": null,
+  "payment": {
+    "network": "eip155:8453",
+    "payer": "0xf77f3c9e6bc9cd0ee1a2943813b6ec57f1305ab3",
+    "success": true,
+    "transaction": "0xed8f7a7577e6c217121b248d632a63f44d6744ac545b9670f9b8d2a7985f3861"
+  }
+}

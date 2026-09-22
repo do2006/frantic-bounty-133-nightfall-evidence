@@ -1,0 +1,19 @@
+{
+  "elapsed_ms": 2349,
+  "request": {
+    "content_digest": "sha256:f56dcb8fe9050dd464d8a999a91e3c66c89a4e10ae6b87af9488b3546b700eac",
+    "media_type": "audio/wav",
+    "idempotency_key": "nightfall-frantic-133-artifact-b2d478d6-d150-418e-91ce-115fb75a31c7",
+    "size_bytes": 284858
+  },
+  "response": {
+    "artifact": {
+      "artifact_ref": "runx:artifact:sha256:e0567cd973eee9d29f6e90218928c37a6f60cc0bfe95dbfb14f42665aff52c07",
+      "content_digest": "sha256:f56dcb8fe9050dd464d8a999a91e3c66c89a4e10ae6b87af9488b3546b700eac",
+      "created_at": "2026-09-22T11:24:16.325Z",
+      "media_type": "audio/wav",
+      "size_bytes": 284858
+    },
+    "status": "stored"
+  }
+}
